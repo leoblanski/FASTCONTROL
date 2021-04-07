@@ -1,0 +1,78 @@
+/*Tela de Login*/
+:root {
+  --cor-botao: #e78200;
+  --cor-botao-hover: #ffb24d;
+}
+
+body{
+	margin:0 auto;
+	width:100%;
+	background-image: linear-gradient(to bottom, rgb(255, 166, 77), rgb(255, 217, 179) );
+}
+
+.fundo_login{
+	opacity: 0.3;
+  	filter: alpha(opacity=50);
+	z-index: -1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+}
+.container_login{
+  top: 50px;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  width: 32%;
+  height: 40%;
+  border-radius: 10px;
+  padding: 5% 3%;
+}
+.container_login img{
+	width: 60%;
+	height: 100%;
+	left: 0px;
+}
+.input_login{
+	font-family: Poppins-Regular;
+  	font-size: 20px;
+  	margin-bottom: 10px;
+  	text-align: left;
+  	background: transparent;
+  	height: 25px;
+  	width: 60%;
+  	box-sizing: border-box;
+  	border: none;
+  	border-bottom: 2.3px solid #4259F9;
+}
+.botao_login input[type=submit] {
+    padding:5px 15px; 
+    width: 50%;
+    height: 35px;
+    background: var(--cor-botao); 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    font-weight: bold;
+}
+
+.botao_login input[type=submit]:hover {
+   background-color: var(--cor-botao-hover);
+}
+/*login para celular*/
+@media (max-width: 600px){
+   .container_login{
+    position:relative;
+    top:54px;
+    width: 88%;
+    height: 100%;
+   }
+   .input_login{
+     font-size:100%;
+   }
+   .botao_login p{
+       font-size:80%;
+   }
+}

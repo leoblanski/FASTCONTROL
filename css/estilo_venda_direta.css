@@ -1,0 +1,206 @@
+
+:root {
+  --cor-botao: #e78200;
+  --cor-botao-hover: #ffb24d;
+  --cor-botao-ok:#367fbf;
+  --cor-botao-ok-hover:#5e9acf;
+  --cor-botao-cancelar:#d53530;
+  --cor-botao-cancelar-hover:#d9534f;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.logo_pesquisa{
+    padding-top:10px;
+}
+.observacao {
+text-align:right;
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.observacao input{
+    height: 100px;
+}
+
+.col-2 {
+  float: left;
+  width: 2%;
+  margin-top: 6px;
+}
+
+.col-25 {
+text-align:right;
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  padding-left:40px;
+}
+
+.col-8 {
+text-align:right;
+  float: left;
+  width: 8%;
+  margin-top: 6px;
+}
+
+.col-60 {
+text-align:right;
+  float: left;
+  padding-left:3px;
+  width: 60%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.checkbox-inline, .radio-inline{
+    position: relative;
+    display: inline-block;
+    left: -20%;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+.class_btn td{
+    padding:5px;
+}
+
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=button]:hover {
+  background-color: var(--cor-botao-cancelar-hover);
+}
+
+input[type=button] {
+  display: inline-block;
+  width:25%;
+  background-color: var(--cor-botao-cancelar);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit] {
+    display: inline-block;
+    width:25%;
+  background-color: var(--cor-botao);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: var(--cor-botao-hover);
+}
+.botoes_align{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 40em) {
+  .col-25, .col-75 {
+    width: 100%;
+    margin-top: 0;
+    padding-left:0;
+  }
+  .col-25 {
+    text-align:left;
+    
+    }
+    .col-8 {
+text-align:right;
+  float: left;
+  width: 15%;
+  margin-top: 6px;
+}
+.col-60 {
+text-align:right;
+  float: left;
+  width: 67%;
+  margin-top: 6px;
+}
+.logo_pesquisa img{
+    width:40px;
+    height:40px;
+    padding-top:15px;
+}
+    
+    .checkbox-inline, .radio-inline{
+    position: relative;
+    text-align:left;
+    display: inline-block;
+    left: 0;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.observacao {
+text-align:right;
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+}
+.observacao input{
+    height: 100px;
+}
+}
+
+
+@media screen and (max-width: 40em) { input[type=submit],input[type=button] {
+    width: 45%;
+    text-align: center;
+    margin-top: 2%;
+  }
+}
+
+.ultimo_doc{
+    font-size:13px;
+    color:red;
+}

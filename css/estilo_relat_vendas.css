@@ -1,0 +1,247 @@
+body {
+    overflow: auto;
+}
+
+:root {
+    --cor-botao: #e78200;
+    --cor-botao-hover: #ffb24d;
+    --cor-botao-ok: #367fbf;
+    --cor-botao-ok-hover: #5e9acf;
+    --cor-botao-cancelar: #d53530;
+    --cor-botao-cancelar-hover: #d9534f;
+    --cor-botao-pesquisar: #ff9900;
+    --cor-botao-pesquisar-hover: #ffad33;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+.col-15-right {
+    text-align: right;
+    float: left;
+    width: auto;
+    margin-top: 6px;
+    margin-left: 25%;
+}
+.col-15 {
+    text-align: right;
+    float: left;
+    width: auto;
+    margin-top: 6px;
+    margin-left: 4%;
+}
+
+.col-17 {
+    text-align: right;
+    float: left;
+    width: auto;
+    margin-top: 6px;
+    margin-left: 0px;
+}
+.col-2 {
+    float: left;
+    width: 2%;
+    margin-top: 6px;
+}
+
+.col-25 {
+    text-align:right;
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    padding-left:40px;
+}
+
+.col-8 {
+    text-align:right;
+    float: left;
+    width: 8%;
+    margin-top: 6px;
+}
+
+.col-60 {
+    text-align:right;
+    float: left;
+    padding-left:3px;
+    width: 60%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+.table td, th {
+    text-align: center;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.checkbox-inline, .radio-inline {
+    position: relative;
+    display: inline-block;
+    left: -20%;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type=number], select, textarea, {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.align_mob{
+    display:none;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=button]:hover {
+    background-color: var(--cor-botao-cancelar-hover);
+}
+
+input[type=button] {
+    display: inline-block;
+    width: 25%;
+    background-color: var(--cor-botao-cancelar);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    display: inline-block;
+    width: 25%;
+    background-color: var(--cor-botao-pesquisar);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio]{
+    position: static;
+    margin-right: 5px;
+    margin-left: -20px;
+
+}
+.checkbox, .radio{
+    position: static;
+    margin-top:0;
+    margin-bottom: 0;
+}
+
+input[type=submit]:hover {
+    background-color: var(--cor-botao-pesquisar-hover);
+}
+
+.botoes_align {
+    width: 100%;
+    text-align: center;
+}
+.align_check{
+    margin-left:28%;
+    text-align:left;
+}
+
+.table td, th {
+    text-align: center;
+}
+.table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th{
+    position: static;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+    text-align: center;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    padding: 8px;
+    vertical-align: middle;
+    text-align: center;
+
+}
+.table > thead > tr > th{
+    position: relative;
+    text-align: center;
+}
+
+input[type=checkbox], input[type=radio] {
+    margin: 2px 0 0;
+    line-height: normal;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 40em) {
+    .container_principal_rel{
+        width: 200%;
+    }
+    .col-25, .col-70 {
+        width: 100%;
+        margin-top: 0;
+        padding-left: 0;
+    }
+    .align_mob{
+        display:block;
+    }
+    .col-17{
+        float: none;
+    }
+    .col-25 {
+        text-align: left;
+    }
+    input[type=submit], input[type=button] {
+        width: 45%;
+        text-align: center;
+        margin-top: 2%;
+    }
+    .col-15-right{
+        margin-left:5%;
+    }
+    .align_check {
+        margin-left: 2%;
+        text-align: left;
+        font-size: 13px;
+    }
+    .table {
+        overflow: auto;
+        font-size: 70%;
+        padding: 0;
+        line-height: 1.42857143;
+        vertical-align: top;
+        border-top: 1px solid #ddd;
+    }
+    .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+        padding:4px;
+    }
+}
+
+
+
+

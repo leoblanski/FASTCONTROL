@@ -1,0 +1,160 @@
+
+:root {
+    --cor-botao: #e78200;
+    --cor-botao-hover: #ffb24d;
+    --cor-botao-ok: #367fbf;
+    --cor-botao-ok-hover: #5e9acf;
+    --cor-botao-cancelar: #d53530;
+    --cor-botao-cancelar-hover: #d9534f;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.col-25 {
+    text-align: right;
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+    padding-left: 40px;
+}
+
+.col-70 {
+    float: left;
+    width: 70%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.checkbox-inline, .radio-inline {
+    position: relative;
+    display: inline-block;
+    left: -20%;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type=number], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.exibe_registros{
+    margin-left: 60%;
+}
+.exibe_registros button{
+    color: var(--cor-botao-ok);
+    font-size: 16px;
+    background: none;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+.exibe_registros button:hover{
+    color: var(--cor-botao-ok-hover);
+}
+
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=button]:hover {
+    background-color: var(--cor-botao-cancelar-hover);
+}
+
+input[type=button] {
+    display: inline-block;
+    width: 25%;
+    background-color: var(--cor-botao-cancelar);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit] {
+    display: inline-block;
+    width: 25%;
+    background-color: var(--cor-botao-ok);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: var(--cor-botao-ok-hover);
+}
+
+.botoes_align {
+    width: 100%;
+    text-align: center;
+}
+
+.table td, th {
+    text-align: center;
+}
+.table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th{
+    position: static;
+}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    padding: 4px;
+    vertical-align: middle;
+
+}
+.table > thead > tr > th{
+    position: relative;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 40em) {
+    .col-25, .col-70 {
+        width: 100%;
+        margin-top: 0;
+        padding-left: 0;
+    }
+    .exibe_registros{
+        margin-left: 50%;
+    }
+
+    .col-25 {
+        text-align: left;
+
+    }
+}
+
+    @media screen and (max-width: 40em) {
+        input[type=submit], input[type=button] {
+            width: 45%;
+            text-align: center;
+            margin-top: 2%;
+        }
+    }

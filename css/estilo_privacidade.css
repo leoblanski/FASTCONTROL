@@ -1,0 +1,13 @@
+.body{
+  background-color:red;  
+}
+.positiontext{
+    text-align:center;
+    margin-top: 5%;
+    font-size:30px;
+}
+.positiontextprivacidade{
+    top:10%;
+    text-align:center;
+    width:90%;
+}

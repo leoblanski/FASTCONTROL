@@ -1,0 +1,68 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 11px;
+}
+
+table, thead, th{
+    text-align: center;
+}
+table, td{
+    font-size: 160%;
+}
+
+
+.container_principal_imp {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #ededed;
+    padding: 20px;
+}
+.container_principal_imp p{
+    text-align:center;
+    color: black;
+    font-weight: bold;
+    font-size:24px;
+    font-family: arial;
+}
+label{
+    font-weight: normal;
+    font-size:150%;
+}
+label b{
+    font-size:110%;
+}
+
+.dados_iniciais{
+    margin-left: 5%;
+    float: left;
+}
+.planos{
+    margin-left: 62%;
+    margin-bottom: 15px;
+}
+
+.totalizadores{
+    width: 100%;
+    border: 2px solid #ddd;
+    padding: 12px;
+}
+
+.totalizadores label{
+    font-weight: normal;
+}
+
+.icons i{
+    font-size: 25px;
+    margin-left:5%;
+    color:black;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 40em) {
+
+    .dados_iniciais{
+        margin-left: 0; 
+        margin-top: 0;
+    }
+}
